@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="output.css" />
+
+    <!-- Google Fonts Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts: Playwrite CU Guides & Rancho -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+CU+Guides&family=Rancho&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts: Google Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body style="font-family: 'Google Sans', sans-serif">
+    <!-- Main Container: Full screen with gradient background and centered content -->
+    <div
+      class="min-h-screen bg-gradient-to-br from-yellow-200 via-pink-200 to-pink-300 flex items-center justify-center p-4"
+    >
+      <!-- Todo App Card -->
+      <div
+        class="bg-white min-h-[600px] overflow-hidden w-full max-w-md p-6 rounded-2xl shadow-xl"
+      >
+        <!-- App Title -->
+        <h1
+          style="font-family: 'Rancho', cursive"
+          class="text-3xl font-bold text-gray-900 mb-6 text-center"
+        >
+          My Todo List
+        </h1>
+
+        <!-- Input Section: Task input + Add button -->
+        <div class="flex gap-2 mb-4">
+          <!-- Task Input -->
+          <input
+            placeholder="What needs to be done?"
+            id="todoInput"
+            class="w-full max-w-md p-3 rounded-xl border-2 border-orange-300 bg-orange-50 placeholder-yellow-400 text-orange-900 focus:outline-none focus:ring-2 focus:ring-orange-300"
+          />
+
+          <!-- Add Task Button -->
+          <button
+            id="addTodoBtn"
+            class="bg-green-400 hover:bg-green-600 font-bold text-white px-5 py-2 rounded-xl transition-all duration-300 cursor-pointer"
+          >
+            Add
+          </button>
+        </div>
+
+        <!-- Section Title for Tasks -->
+        <h2
+          style="font-family: 'Rancho', cursive"
+          class="text-3xl font-bold text-gray-900 mb-4"
+        >
+          Today’s Tasks
+        </h2>
+
+        <!-- Task List -->
+        <ul
+          id="itemsList"
+          class="space-y-3 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-yellow-400 scrollbar-track-yellow-100 font-bold text-slate-700"
+        >
+          <!-- Tasks will be dynamically inserted here using JavaScript -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- JavaScript: Handles tasks functionality and localStorage -->
+    <script src="script.js"></script>
+  </body>
+</html>

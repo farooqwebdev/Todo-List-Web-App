@@ -1,25 +1,27 @@
 # Todo List Web App
 
-A **modern Todo List application** built using **HTML, Tailwind CSS, and JavaScript**.  
-This project helped me **learn and implement frontend development concepts** while practicing real-world features like data persistence and UI updates.
+A modern Todo List web application built with HTML, Tailwind CSS, and JavaScript. 
+This project helps users manage tasks efficiently, and I built it to practice frontend development.
 
-## 🌟 Features
+## Features
+- Add tasks
+- Mark tasks as completed (checkbox with line-through)
+- Delete tasks
+- Persistent data using localStorage (tasks stay even after refreshing the browser)
+- Responsive and modern UI using Tailwind CSS
 
-- **Add tasks** with a clean and responsive UI  
-- **Mark tasks as completed** using a checkbox (line-through effect)  
-- **Delete tasks** easily  
-- **Persistent storage** using **localStorage** — tasks remain even after refreshing the page or closing the browser  
-- **Responsive design** built with Tailwind CSS  
+## Technology Stack
+- HTML5
+- Tailwind CSS
+- JavaScript
 
-## 💻 Technology Stack
+## Project Structure
+- index.html       # Main HTML file
+- script.js        # JavaScript for tasks and localStorage
+- output.css       # Tailwind CSS
 
-- **HTML5**  
-- **Tailwind CSS**  
-- **JavaScript (ES6)**  
-
-## 📂 Project Structure
-Todo-List/
-│
-├─ index.html # Main HTML file
-├─ script.js # JavaScript functionality
-├─ output.css # Compiled Tailwind CSS
+## What I Learned
+- DOM manipulation and event handling
+- Using localStorage for data persistence
+- Responsive design with Tailwind CSS
+- Structuring frontend projects professionally
